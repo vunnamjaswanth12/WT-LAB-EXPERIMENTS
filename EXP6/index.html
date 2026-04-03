@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Registration Form -->
+    <div id="registerForm">
+        <h2>Register</h2>
+
+        <input type="text" id="rname" placeholder="Name"><br>
+        <input type="text" id="remail" placeholder="Email"><br>
+        <input type="password" id="rpassword" placeholder="Password"><br>
+        <input type="text" id="rphone" placeholder="Phone"><br>
+
+        <button onclick="validateRegister()">Register</button>
+
+        <p>Already have account? 
+            <span onclick="showLogin()" class="link">Login</span>
+        </p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="hidden">
+        <h2>Login</h2>
+
+        <input type="text" id="lemail" placeholder="Email"><br>
+        <input type="password" id="lpassword" placeholder="Password"><br>
+
+        <button onclick="validateLogin()">Login</button>
+
+        <p>Don't have account? 
+            <span onclick="showRegister()" class="link">Register</span>
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
